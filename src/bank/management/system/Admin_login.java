@@ -2,15 +2,15 @@ package bank.management.system;
 
 import javax.swing.*;
 import java.awt.*;
-// import java.awt.event.ActionEvent;
 import java.awt.event.*;
-// import java.sql.ResultSet;
-// import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Admin_login extends JFrame implements ActionListener{
     JTextField textField1;
     JPasswordField passwordField1;
     JButton b1,b2;
+    String login_id,passWord;
+    
     Admin_login(){
         super("Admin Log In");
 
@@ -82,7 +82,17 @@ public class Admin_login extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         try {
             if(e.getSource()==b1){
-
+                login_id = textField1.getText();
+                passWord = String.valueOf(passwordField1.getPassword());
+                Conn c = new Conn();
+                String q1 = "select * from admin_login where login_id = '"+login_id+"' and  passWord = '"+passWord+"'";
+                ResultSet resultSet = c.statement.executeQuery(q1);
+                if (resultSet.next()){
+                    new Admin_Main(login_id,passWord);
+                    setVisible(false);
+                }else {
+                    JOptionPane.showMessageDialog(null,"Incorrect User Id or Password");
+                }
             }else if(e.getSource()==b2){
                 new login();
                 setVisible(false);
