@@ -236,6 +236,7 @@ public class signUp3 extends JFrame implements ActionListener{
                     setVisible(false);
                 }
             } else if (e.getSource()==c) {
+                setVisible(false);
                 new login();
             }
 

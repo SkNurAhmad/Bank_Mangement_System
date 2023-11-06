@@ -4,6 +4,10 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\Users\\sknur\\Desktop\\Study\\Software Engineering Practical\\jcalendar-tz-1.3.3-4.jar",
-        "c:\\Users\\sknur\\Desktop\\Study\\Software Engineering Practical\\mysql-connector-java-8.0.28.jar"
+        "c:\\Users\\sknur\\Desktop\\Study\\Software Engineering Practical\\mysql-connector-java-8.0.28.jar",
+        "c:\\Users\\sknur\\Desktop\\DESKTOP FOLDERS\\Study\\Software Engineering Practical\\jcalendar-tz-1.3.3-4.jar",
+        "c:\\Users\\sknur\\Desktop\\DESKTOP FOLDERS\\Study\\Software Engineering Practical\\mysql-connector-java-8.0.28.jar",
+        "d:\\Study\\Software Engineering Practical\\jcalendar-tz-1.3.3-4.jar",
+        "d:\\Study\\Software Engineering Practical\\mysql-connector-java-8.0.28.jar"
     ]
 }
